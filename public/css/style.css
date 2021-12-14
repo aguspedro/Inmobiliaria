@@ -1,0 +1,215 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+#contactbar{
+    background-color: rgb(82, 115, 77);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+      }
+.iconos{
+    color: rgb(243, 239, 204);
+    width: 80px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    
+}
+
+ul{
+    list-style:none;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    }
+    
+a{
+      text-decoration: none;
+      color:rgb(82, 115, 77);
+}
+  #buscar{
+      margin-left: 33%;
+      margin-top: 10%;
+      width: 80px;
+      border-radius: 6%;
+      color: rgb(43, 56, 42);
+      font-weight: bold;
+      background-color: rgb(247, 243, 210);
+      opacity: .8;
+  }
+.portada1{
+    width: 100%;
+    height: 600px; 
+    background: url(/imagenes/1.jpg);
+    background-size: cover;
+        
+}
+.form1{
+    color: rgb(243, 239, 204);   
+    border-radius: 2%;
+    background-color: rgb(82, 115, 77);
+    opacity: .8;
+    display: grid;       
+    width: 220px;
+    height: 170px;
+    text-align: center;
+    padding: 3%;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 145px;
+} 
+    label{
+         font-weight:bolder;
+    }
+    .labelportada{
+        color: rgb(247, 242, 201);
+    }
+#propiedadesdestacadas{
+    background-color: rgb(82, 115, 77);
+    color: white;
+    font-weight: bold;
+    padding: 1%;
+    margin-block: 30px; 
+}
+
+#propiedades{
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;  
+    padding: 1%; 
+    margin-block: 30px; 
+    width: 100%; 
+  }
+
+       .propiedades{         
+        margin-left: 5%;
+        width: 330px;
+        height: 460px;
+        border-color: rgb(82, 115, 77);
+        box-shadow: rgba(59, 90, 60, 0.678) 0px 5px 15px;
+        text-align: center;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        color: rgb(46, 73, 42);background-color: rgb(241, 243, 241);
+     }
+
+.portadaprop{
+    width: 330px;
+}
+#vermas{
+    margin-left: 60%;
+    background-color: rgb(82, 115, 77);
+    opacity: .6;
+    color: rgba(243, 239, 204);
+    padding: 2%;
+    }
+
+    .nosotros{
+        background-color: rgb(82, 115, 77);
+        color: white;
+        font-weight: bold;
+        padding: 1%;
+        margin-block: 30px;
+    }
+    #cv{
+        justify-content: center;
+       margin-left: 25%;
+        width: 40%;
+        background-color: rgb(247, 242, 201);
+        text-align: center;
+        font-size: 12px;
+        border-radius: 3%;
+    }
+    #donde{
+    display: flex;
+    justify-content: center;
+    
+}
+#oficina{
+    width: 350px;
+    height: 140px;
+    color: rgb(82, 115, 77);
+    
+    text-align: center;
+    padding-top: 4%;
+    border-radius: 3%;
+    opacity: 1;
+}
+     
+    footer{display: flex;
+        background-color: rgb(82, 115, 77);
+        font-style: italic;
+        color: seashell;
+        justify-content: space-between;
+        align-items: center;
+        
+     }
+    #logofot{
+        opacity: 8;
+        padding: 1%;
+    }
+
+
+    .titulo-form{
+        margin-left: 40px;
+        color:rgb(82, 115, 77);
+    }
+    
+    form{
+        margin: 100px;
+    }
+    .item-form{
+        margin: 20px 0px;
+    }
+    
+    input{
+    
+        height: 30px;
+        width: 80%;
+    }
+    label{
+        font-size: 20px;
+        font-weight: 200;
+        color: rgb(82, 115, 77);
+    }
+    .boton-agregar{
+        background-color:rgb(82, 115, 77);
+        color: white;
+        border: rgb(82, 115, 77);
+        padding: 10px;
+    }
+    
+    .boton-agregar:active{
+        background-color: rgb(82, 115, 77)
+    }
+
+    @media (max-width: 768px){
+        .propiedades{ 
+            margin-left: 5%;
+            width: 170px;
+            height: 390px;
+            ;
+        }
+        .portadaprop{
+            width: 170px;
+        }
+        #vermas{
+            margin-left: 10%;
+    }
+}
+@media (max-width: 330px){
+    #contactbar{
+         flex-direction: column;
+    }
+     
+   .form1{
+    margin-top: 50px;
+    margin-left: 45px;
+   }
+}

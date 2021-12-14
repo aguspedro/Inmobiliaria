@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('../parcials/links') %>
+    
+</head>
+<body>
+    <header>
+        <%-include('../parcials/header') %>
+    </header>
+
+
+ 
+         <h1 class="titulo-form">Ingresar propiedad</h1>
+             <main>
+                      <form method="POST" action="/formNewprop">
+                          <div class="item-form">
+                              <label for="categoria" class="form-label">Categoría</label>
+                              <input type="text" class="form-control" id="categoría" name="categoria">
+                          </div>
+                          <div class="item-form">
+                              <label for="operacion" class="form-label">Operación</label>
+                              <input type="text" class="form-control" id="categoria" name="operacion">
+                          </div>
+                          <div class="item-form">
+                              <label for="propiedad" class="form-label">Propiedad</label>
+                              <input type="text" class="form-control" id="categoria" name="propiedad">
+                          </div>
+                          <div class="item-form">
+                            <label for="descripcion" class="form-label">Descripción</label>
+                            <input type="text" class="form-control" id="categoria" name="descripcion">
+                        </div>
+                          <div class="item-form">
+                              <label for="precio" class="form-label">Precio</label>
+                              <input type="text" class="form-control" id="precio" name="precio">
+                          </div>
+                          <button type="submit" class="boton-agregar">Enviar</button>
+                        </form>
+              </main>
+
+
+    <%-include('../parcials/footer') %>
+
+</body>
+
+<script src="https://kit.fontawesome.com/50dd093889.js" crossorigin="anonymous"></script>
+</html>

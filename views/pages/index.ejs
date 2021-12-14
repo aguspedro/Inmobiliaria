@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('../parcials/links') %>
+    
+</head>
+<body>
+    <header>
+        <%-include('../parcials/header') %>
+    </header>
+
+    <main>
+        <section id="portada">
+            <div class="portada1">
+                         
+            <form class="form1" action="">
+
+                <label class="labelportada" for=" ">ENCUENTRA TU INMUEBLE</label>
+
+                <select name="ALQUILER O VENTA" id="">
+                <option value ="alquiler">ALQUILER o VENTA </option>
+                <option value ="alquiler">Alquier permanente </option>
+                <option value ="alquiler">Alquier temporario </option>
+                 <option value="venta">Venta</option>
+                </select>
+
+                <select name="Tipo de inmueble" id="">
+                <option value ="alquiler">TIPO DE INMUEBLE </option>
+
+                <option value =" ">Casa </option>
+                <option value ="">Casa de campo/Casaquinta </option>
+                 <option value = "">Departamento</option>
+                 <option value ="">Campo </option>
+                 <option value =" ">Chacra </option>
+                 <option value =" ">Tereno/Lote </option>
+                 <option value =" ">Local </option>
+                </select>
+
+                 <select name="LOCALIDAD" id="">
+                     <option value ="">LOCALIDAD </option>
+                      <option value ="">Madariaga </option>
+                      <option value =" ">Pinamar </option>
+                     <option value =””>Cariló</option>
+                     <option value ="">Valeria del Mar </option>
+                     <option value ="">Costa Esmeralda </option>
+                     <option value ="">Villa Gesell </option>
+                    </select>
+                    <a id="buscar" href="">BUSCAR</a>          
+                </form>
+           </div>
+            
+        </section>
+
+        <div id="propiedadesdestacadas"> 
+                PROPIEDADES DESTACADAS
+            </div>
+        <section id="propiedades">
+            
+            <div class="propiedades">
+                <div>
+                <img class="portadaprop" src="imagenes/labodega.jpg" alt="casaquintabodega" ></div>
+                
+                <h2 id="tituloprop">Casaquinta con pileta</h2>
+                <p> ALQUILER.Casaquinta en predio de una hectárea. 4 habitaciones. 3 baños. Cocina comedor</p>
+                <a id="vermas" href="">VER MÁS</a> </div> 
+
+          <div class="propiedades">
+             <div><img class="portadaprop"src="imagenes/portada4.jpg" alt="campo"></div>
+                
+                <h2>Campo con laguna</h2>
+                 <p> VENTA.1200has. de campo productivo. Apto siembra y ganadería. Laguna y humedales. Acceso asfaltado</p>
+                <a id="vermas" href="">VER MÁS</a> </div>     
+                
+          <div class="propiedades">
+             <div><img class="portadaprop"src="imagenes/1_GKlhrnP-min.jpg" alt="campo" ></div>
+                
+          <h2>Chacra cerca del mar</h2>
+                <p> ALQUILER. Chacra de 30has. Casa con 3 habitaciones. 2 baños. living comedor amplio. Pileta</p>
+                <a id="vermas" href="">VER MÁS</a> </div>     
+
+                
+                <div class="propiedades">
+                    <% data.forEach((prop)=>{%>
+                    <div>
+                    <img class="portadaprop" src="<%=prop.imagen%>" alt="imagen-card" ></div>
+                    
+                    <h2 id="tituloprop"><%=prop.propiedad %> </h2>
+                    <p><%=prop.operacion %> <%=prop.descripcion %> </p>
+                    <a id="vermas" href="">VER MÁS</a> </div> <% }) %>
+            
+
+        </section>
+
+        <section id="nosotros">
+            <div class="nosotros">NOSOTROS</div>
+              <p>Somos una empresa dedicada a prestar servicios inmobiliarios. Lo nuestro no se limita a alquilar, vender o tasar un inmueble. Nos importa la atención personalizada de quien nos contacta, atendiendo necesidades y brindando soluciones para su entera satisfacción. Disponemos de las herramientas necesarias para asesorar idóneamente en lo que necesite. Tenemos base en General Madariaga, Buenos Aires, Costa Atlántica argentina. No somos una inmobiliaria grande. Pero intentamos ser una gran inmobiliaria. Y sobre todo... establecer relaciones que perduren en el tiempo. Estamos habilitados por el Colegio de Martilleros y Corredores Públicos del Departamento Judicial de Dolores.</p>
+            <div id="cv">
+               <p> Julieta Chalita Crinigan</p>
+                   
+<p> DNI 16.463.650</p>
+<p> Mat. 1036. Tº 3. Fº 323. CMyCPD.</p>
+<p>Consultora Inmobiliaria. Cámara Inmobiliaria Argentina.
+Tasadora, Martillera pública, Corredora inmobiliaria, Universidad de Morón.
+Perito Judicial en Departamento Judicial de Dolores.
+Tasadora nómina del Banco de la Provincia de Buenos Aires.
+Consultora en Creación y Gestión de Destinos turísticos. Universidad de Salamanca.</p>
+            </div>
+
+            <div class="nosotros">DÓNDE ENCONTRARNOS</div>
+            <div id="donde">
+<div id="oficina">
+    Nuestra oficina comercial está ubicada en el centro de la ciudad de General Juan Madariaga. Encontranos en calle Avellaneda n°73. 
+    Comunicate por teléfono al +54 9 2267 631530. O escribinos por WhatsApp 
+    <a href="https://wa.me/5492267631530"   target="_blank"> <i class="fab fa-whatsapp"></i></a>
+
+</div>
+            <div> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6372.97892529668!2d-57.13986754232788!3d-36.99811788379674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959b9d0ed97e3bcb%3A0x615582488df2dd67!2sAvellaneda%2073%2C%20B7163EEA%20Gral.%20Juan%20Madariaga%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1634697483320!5m2!1ses!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+</div>
+
+        </section>
+    </main>
+    <%-include('../parcials/footer') %>
+    
+</body>
+
+<script src="https://kit.fontawesome.com/50dd093889.js" crossorigin="anonymous"></script>
+</html>
